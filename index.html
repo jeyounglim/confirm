@@ -5382,72 +5382,39 @@
         </div>
 
         <!-- 250401 이벤트 팝업 -->
-        <div class="open pop-notice popup-wrap" id="popup_sample">
-          <style>
-            .pop-notice .popup {
-              max-width: 1000px;
-              min-width: 550px;
-              padding: 0 0 46px;
-              width:auto;
-            }
-            .pop-notice .popup .popup-con {
-              display: flex;
-            }
-            .pop-notice button.btn-popup-close {
-              bottom: 0;
-              top: inherit;
-              right: 5px;
-              z-index: 1;
-            }
-            @media screen and (max-width: 767px) {
-              .pop-notice .popup {
-                max-width: 90vw;
-                min-width: 90vw;
-                overflow: inherit;
-                padding-bottom: 0;
-                /* max-height: calc(90vh - 92px); */
-                max-height: none;
-                height:fit-content;
-              }
-              .pop-notice .popup .popup-con {
-                flex-direction: column;
-                overflow-y: auto;
-                height: 100%;
-              }
-              .pop-notice .popup .popup-con a img {
-                width: 100%;
-                height: auto;
-              }
-              .pop-notice button.btn-popup-close {
-                bottom: -44px;
-              }
-              .pop-notice .btn-wrap {
-                bottom: -44px;
-              }
-            }
-          </style>
-          <div class="popup">
+ <!-- 250310 이벤트 팝업 -->
+    <div class="open pop-notice popup-wrap" id="popup_sample">
+        <style>
+        .pop-notice .popup  {max-width:1000px;min-width:1000px;padding:0 0 46px;}
+        .pop-notice .popup .popup-con  {display:flex;}
+        .pop-notice button.btn-popup-close {bottom:0;top:inherit;right:5px;z-index:1;}
+        .pop-notice .sea-pop img{height: 640px;}
+        @media screen and (max-width: 767px) {
+            .pop-notice .popup  {max-width:90vw;min-width:90vw;overflow:inherit;padding-bottom:0;max-height: calc(90vh - 92px);}
+            .pop-notice .popup .popup-con  {flex-direction:column;overflow-y: scroll;height:100%;}
+            .pop-notice .popup .popup-con a img  {width:100%;height:auto;}
+            .pop-notice button.btn-popup-close {bottom:-46px;}
+            .pop-notice .btn-wrap {bottom:-46px;}
+        }
+        </style>
+        <div class="popup">
             <div class="popup-con">
-              <a href="https://www.cello-square.com/kr/promotion/view-191.do">
-                <img
-                  src="./static/assets-new/250401_pc_popup_01.jpg"
-                  alt="특송"
-                />
-              </a>
+                <a href="https://www.cello-square.com/kr/promotion/view-19.do">
+                    <img src="./static/asset-new/250310_pc_popup_01.jpg" alt="특송" class="pc-img">
+                    <img src="./static/asset-new/250318_mo_popup_01.jpg" alt="특송" class="mo-img" >
+                </a>
+                <a href="https://app.cellosquare.com" target="_blank" class="sea-pop">
+                    <img src="./static/asset-new/250401_pc_popup_01.jpg" alt="해상"  >
+                </a>
             </div>
             <!-- //-->
-            <button type="button" class="btn-popup-close">
-              <span class="hidden">레이어 팝업 닫기</span>
-            </button>
+            <button type="button" class="btn-popup-close"><span class="hidden">레이어 팝업 닫기</span></button>
             <div class="btn-wrap">
-              <span class="check-box"
-                ><input type="checkbox" id="no-watch" /><label for="no-watch"
-                  >하루 동안 보지 않기</label
-                ></span
-              >
+                <span class="check-box"><input type="checkbox" id="no-watch"><label for="no-watch">하루 동안 보지 않기</label></span>
             </div>
-          </div>
         </div>
+    </div>
+    <!-- //250310 이벤트 팝업 -->
         <!-- //250310 이벤트 팝업 -->
       </footer>
     </footer>
